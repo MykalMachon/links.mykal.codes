@@ -1,11 +1,64 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Details from '../components/Details.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>How to find Mykal on the web</h1>
-	</main>
+<Layout title="Mykal's Links">
+  <header class="flow">
+    <h1>Mykal's Links</h1>
+    <p>All the places I hang out on the internet.</p>
+  </header>
+  <main>
+    <section class="flow">
+      <h2>Common Links</h2>
+			<p>The places I'm the most active.</p>
+      <dl>
+        <div>
+          <dt>Website</dt>
+          <dd>My blog and website</dd>
+        </div>
+        <div>
+          <dt>Mastodon</dt>
+          <dd>Microblogging site of choice.</dd>
+        </div>
+        <div>
+          <dt>GitHub</dt>
+          <dd>For work stuff.</dd>
+        </div>
+      </dl>
+    </section>
+    <section class="flow">
+      <h2>Other Stuff</h2>
+			<p>Other places I exist on the internet.</p>
+      <Details summary="Socials">
+        <dl>
+          <div>
+            <dt>Website</dt>
+            <dd>My blog and website</dd>
+          </div>
+          <div>
+            <dt>Mastodon</dt>
+            <dd>Microblogging site of choice.</dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd>For work stuff.</dd>
+          </div>
+        </dl>
+			</Details>
+       <Details summary="Misc">
+         <dl>
+					<div>
+						<dt>Test</dt>
+						<dd>Another test</dt>
+					</div>
+				 </dl>
+			 </Details>
+    </section>
+  </main>
 </Layout>
 
+<style lang="scss">
+	
+</style>

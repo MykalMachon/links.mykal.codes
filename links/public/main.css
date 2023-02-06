@@ -1,0 +1,13 @@
+@import 'https://unpkg.com/open-props';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.flow * + * {
+ margin-block-start: var(--flow-size, var(--size-3));
+}
